@@ -1272,6 +1272,11 @@ CUSTOM STYLES
     background-size: cover;
 }
 
+#testimonial .section-header p,
+#testimonial .section-header .section-title {
+    color: #fff;
+}
+
 #contact-us ul {
     list-style: none;
     padding: 0;
