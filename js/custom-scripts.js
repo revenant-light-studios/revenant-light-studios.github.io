@@ -46,12 +46,24 @@ jQuery(function($) {
     new WOW().init();
      
     smoothScroll.init();
-
+    
+    function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            let j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }
     
     $(window).load(function() {
         'use strict';
         var $portfolio_selectors = $('.portfolio-filter >li>a');
         var $portfolio = $('.portfolio-items');
+        
+        // Sort portfolio items - David María Arribas <dmariaa70@gmail.com>
+        var $portfolio_items = $portfolio.children('.portfolio-item');
+        shuffle($portfolio_items.detach());
+        $portfolio.append($portfolio_items);
+        
         $portfolio.isotope({
             itemSelector: '.portfolio-item',
             layoutMode: 'fitRows'
@@ -66,6 +78,8 @@ jQuery(function($) {
             });
             return false;
         });
+        
+        
     });
 
     $(document).ready(function() {
