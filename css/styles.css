@@ -1223,6 +1223,10 @@ li.plan-purchase .btn {
 /**
 CUSTOM STYLES
  */
+a {
+    color: #ae0000;
+}
+
 .navbar.navbar-default .navbar-toggle {
     margin-top: 20px;
 }
@@ -1265,11 +1269,43 @@ CUSTOM STYLES
     object-fit: cover;
 }
 
+.section-header .section-title {
+    color: #ae0000;
+}
+
+.section-header .section-title:before {
+    color: #ff7171;
+}
+
+.single-testimonial img {
+    border: 2px solid #ae0000;
+}
+
+#portfolio .portfolio-filter > li a:hover, #portfolio .portfolio-filter > li a.active {
+    background-color: #AE0000;
+}
+
+.business-stats {
+    border-color: #ae0000;
+}
+
+#our-team .team-member .team-img {
+    border-color: #ae0000;
+}
+
+#our-team .social-icons {
+    float: none;
+    display: block;
+}
+
 #about {
     padding: 20px 4px;
-    background: #133986;
-    /* background: url('../images/img2.jpg'); */
-    background-size: cover;
+    background: #AE0000;
+}
+
+#about img {
+    width: 70%;
+    margin: 0 auto;
 }
 
 #testimonial .section-header p,
@@ -1295,7 +1331,17 @@ CUSTOM STYLES
     float: right;
 }
 
+#main-nav.navbar-default .navbar-nav > li.active > a, #main-nav.navbar-default .navbar-nav > li.open > a, #main-nav.navbar-default .navbar-nav > li:hover > a {
+    background: #ae0000;
+}
+
 @media only screen and (min-width: 768px) {
+    #main-nav.navbar-default .navbar-nav > li.active > a, #main-nav.navbar-default .navbar-nav > li.open > a, #main-nav.navbar-default .navbar-nav > li:hover > a {
+        color: #ae0000;
+        border-top: 4px solid #ae0000;
+        background: none;
+    }
+
     .navbar-brand {
         padding-top: 8px!important;
     }
